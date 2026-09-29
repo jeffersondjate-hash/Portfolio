@@ -12,7 +12,7 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-900 px-6">
-
+      
       {/* Code Background */}
       <div className="absolute inset-0 opacity-10">
         <img
@@ -62,13 +62,7 @@ export function Hero() {
             className="text-5xl md:text-6xl font-bold mb-6 text-white"
           >
             Bonjour, je suis{" "}
-            <span
-              className="text-green-400"
-              style={{
-                textShadow:
-                  "0 0 10px rgba(74, 222, 128, 0.8), 0 0 20px rgba(74, 222, 128, 0.6), 0 0 30px rgba(74, 222, 128, 0.4)",
-              }}
-            >
+            <span className="text-green-400 glow-text">
               Jefferson Djaté
             </span>
           </motion.h1>
@@ -81,6 +75,7 @@ export function Hero() {
             className="text-xl md:text-2xl text-gray-300 mb-8 font-[Times_New_Roman]"
           >
             Développeur Front end passionné par la création,
+            <br />
             sortie de l'EPCCI
           </motion.p>
 
@@ -105,11 +100,11 @@ export function Hero() {
             <motion.a
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.95 }}
-              href="https://github.com"
+              href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-gray-800 rounded-full hover:bg-green-400/20 transition-colors shadow-md border-2 border-green-400/30 hover:border-green-400"
               aria-label="GitHub"
+              className="p-3 bg-gray-800 rounded-full hover:bg-green-400/20 transition-colors shadow-md border-2 border-green-400/30 hover:border-green-400"
             >
               <Github size={24} className="text-green-400" />
             </motion.a>
@@ -143,6 +138,16 @@ export function Hero() {
 
         </div>
       </div>
+
+      {/* Glow effect */}
+      <style>{`
+        .glow-text {
+          text-shadow:
+            0 0 10px rgba(74, 222, 128, 0.8),
+            0 0 20px rgba(74, 222, 128, 0.6),
+            0 0 30px rgba(74, 222, 128, 0.4);
+        }
+      `}</style>
     </section>
   );
 }
