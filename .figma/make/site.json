@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your professional journey and skills with a personalized portfolio, designed for individuals seeking to highlight their expertise and attract opportunities.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
