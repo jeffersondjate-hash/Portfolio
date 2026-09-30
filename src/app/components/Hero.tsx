@@ -11,7 +11,7 @@ export function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-900 px-6">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-900 px-6 pt-24 pb-12">
       
       {/* Code Background */}
       <div className="absolute inset-0 opacity-10">
@@ -45,7 +45,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-8 flex justify-center"
           >
-            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-green-400 shadow-2xl shadow-green-400/50">
+            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-green-400 shadow-2xl shadow-green-400/50">
               <img
                 src="/profile.jpg"
                 alt="Jefferson Djaté"
@@ -59,7 +59,7 @@ export function Hero() {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-5xl md:text-6xl font-bold mb-6 text-white"
+            className="text-4xl md:text-6xl font-bold mb-6 text-white"
           >
             Bonjour, je suis{" "}
             <span className="text-green-400 glow-text">
@@ -74,8 +74,8 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-300 mb-8 font-[Times_New_Roman]"
           >
-            Développeur passionné par la création,
-            <br />
+            Développeur passionné par la création,{" "}
+            <br className="hidden md:block" />
             sortie de l'EPCCI
           </motion.p>
 
