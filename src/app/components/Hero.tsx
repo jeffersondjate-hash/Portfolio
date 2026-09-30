@@ -74,7 +74,7 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-300 mb-8 font-[Times_New_Roman]"
           >
-            Développeur Front end passionné par la création,
+            Développeur passionné par la création,
             <br />
             sortie de l'EPCCI
           </motion.p>
